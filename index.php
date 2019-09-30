@@ -9,6 +9,7 @@ $title='<title>Это первая домашка</title>';
 $h1='<h1>создаем р1</h1>';
 ?>
 <!-- http://localhost/phpLessons/index.php -->
+<!-- just comment -->
 <?php
     $a = 5;
     $b = '05';
