@@ -1,6 +1,6 @@
 <?<?php 
-$a=-10;
-$b=-12;
+$a=(int)-10;
+$b=(int)-12;
 echo "Первое задаени".PHP_EOL;
 if ($a>=0&&$b>=0) echo $a-$b;
 elseif ($a<0&&$b<0) {
@@ -74,7 +74,62 @@ switch ($a) {
 		$a++;
 		}
 
-echo PHP_EOL."Третье задание";
+echo PHP_EOL."Третье задание".PHP_EOL;
+
+function Plus($a1,$b1) {
+  return $a1+$b1;
+}
+function Minus($a1,$b1) {
+  return $a1-$b1;
+}
+function Divi($a1,$b1) {
+  return $a1/$b1;
+}
+function Mult($a1,$b1) {
+  return $a1*$b1;
+}
+
+echo "Четвертое задание".PHP_EOL;
+echo mathOperation(10, 2, "Mult").PHP_EOL;
+
+
+
+function mathOperation($arg1, $arg2, $operation){
+	switch ($operation) {
+		case $operation=="Plus":
+			return Plus($arg1, $arg2); 
+			break;
+		case $operation=="Minus":	
+		return Minus($arg1, $arg2); 
+			break;
+		case $operation=="Div":	
+		return Divi($arg1, $arg2); 
+			break;	
+		case $operation=="Mult":	
+		return Mult($arg1, $arg2); 
+			break;
+		
+	}
+	}
+
+echo "Шестое задание".PHP_EOL;	
+echo power(5,3);
+
+function power($val, $pow) {
+	if ($pow>1) {
+       return $val*power($val,$pow-1);
+	}
+	elseif ($pow=0) {
+		return 1;}
+	elseif ($pow<0) {
+			return 0;
+		}	
+	else return $val;
+}
+
+
+	
+
  ?>
 
  <!DOCTYPE html>
